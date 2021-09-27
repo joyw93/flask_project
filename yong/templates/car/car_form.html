@@ -3,17 +3,29 @@
 
 <div class="row mb-3">
 
+  
+
 
   <form class="col-3" method="POST" action="{{ url_for('car.form') }}"> <!-- note action -->
 
     <select required="required" class="form-select" aria-label="Default select example" id="manufact" name="manufact" >
       <option value="">제조사 선택</option>
       <option value="현대">현대</option>
+      <option value="제네시스">제네시스</option>
       <option value="기아">기아</option>
       <option value="르노삼성">르노삼성</option>
       <option value="벤츠">벤츠</option>
       <option value="BMW">BMW</option>
       <option value="아우디">아우디</option>
+      <option value="폭스바겐">폭스바겐</option>
+      <option value="미니">미니</option>
+      <option value="랜드로버">랜드로버</option>
+      <option value="포드">포드</option>
+      <option value="볼보">볼보</option>
+      <option value="재규어">재규어</option>
+      <option value="지프">지프</option>
+      <option value="포르쉐">포르쉐</option>
+      <option value="렉서스">렉서스</option>
     </select>
 
 
@@ -23,8 +35,21 @@
       <option value="아반떼" class="현대">아반떼</option>
       <option value="쏘나타" class="현대">쏘나타</option>
       <option value="그랜저" class="현대">그랜저</option>
+      <option value="싼타페" class="현대">싼타페</option>
+      <option value="팰리세이드" class="현대">팰리세이드</option>
+      <option value="투싼" class="현대">투싼</option>
+      <option value="스타렉스" class="현대">스타렉스</option>
+      <option value="i30" class="현대">i30</option>
+      <option value="i40" class="현대">i40</option>
+
+      <!-- 제네시스 -->
+      <option value="G70" class="제네시스">G70</option>
+      <option value="G80" class="제네시스">G80</option>
+      <option value="GV70" class="제네시스">GV70</option>
+      <option value="GV80" class="제네시스">GV80</option>
       
       <!-- 기아 -->
+      <option value="모닝" class="기아">모닝</option>
       <option value="K3" class="기아">K3</option>
       <option value="K5" class="기아">K5</option>
       <option value="K7" class="기아">K7</option>

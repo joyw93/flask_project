@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, jsonify
 import joblib
 from yong.models.predict_model import Predict
 
@@ -18,6 +18,9 @@ def form():
         fuel = request.form['fuel']
         color = request.form['color']
         price = Predict.price(lgbm, model, age, odo, fuel, color)
+
+        dataset = jsonify(manufact, model, age, odo, fuel, color, price)
+
         return render_template('car/car_form.html',manufact=manufact, model=model, age=age, odo=odo, fuel=fuel, price=price)
     return render_template('car/car_form.html')
 
